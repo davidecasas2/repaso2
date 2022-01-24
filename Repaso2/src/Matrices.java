@@ -267,4 +267,17 @@ public class Matrices {
 		return dispersa && dispersa2;
 		
 	}
+	
+	public static boolean esSimetrica(int m[][]) {
+		boolean simetrica=true;
+		
+		for (int i = 0; i < m.length; i++) {
+			for (int j = 0; j < m[0].length; j++) {
+				if (m[i][j]!=m[j][i]) {
+					simetrica=false;
+				}
+			}
+		}
+		return simetrica;
+	}
 }
